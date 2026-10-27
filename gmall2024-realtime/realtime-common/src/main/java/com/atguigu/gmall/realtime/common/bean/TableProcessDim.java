@@ -4,6 +4,10 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ *将mysql中的配置表封装成该TableProcessDim对象
+ */
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
