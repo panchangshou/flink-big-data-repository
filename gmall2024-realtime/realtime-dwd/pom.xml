@@ -8,6 +8,10 @@
         <artifactId>gmall2024-realtime</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+    <packaging>pom</packaging>
+    <modules>
+        <module>realtime-dwd-base-log</module>
+    </modules>
     <dependencies>
         <dependency>
             <groupId>com.atguigu</groupId>

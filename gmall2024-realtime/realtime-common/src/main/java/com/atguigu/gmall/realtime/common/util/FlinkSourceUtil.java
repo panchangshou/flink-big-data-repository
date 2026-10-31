@@ -8,6 +8,7 @@ import org.apache.flink.api.common.serialization.DeserializationSchema;
 import org.apache.flink.api.common.typeinfo.TypeInformation;
 import org.apache.flink.connector.kafka.source.KafkaSource;
 import org.apache.flink.connector.kafka.source.enumerator.initializer.OffsetsInitializer;
+import org.apache.kafka.clients.consumer.ConsumerConfig;
 
 import java.io.IOException;
 import java.util.Properties;
@@ -21,8 +22,9 @@ public class FlinkSourceUtil {
         KafkaSource<String> kafkaSource = KafkaSource
                 .<String>builder()
                 .setBootstrapServers(Constant.KAFKA_BROKERS)
-                .setTopics(Constant.TOPIC_DB)
+                .setTopics(topic)
                 .setGroupId(groupId)
+                //.setProperty(ConsumerConfig.ISOLATION_LEVEL_CONFIG,"read_committed")
                 //在生产环境中，需要手动维护偏移量，KafkaSource->KafkaSourceReader->存储偏移量变量
                 //从最末尾开始消费
                 .setStartingOffsets(OffsetsInitializer.latest())
