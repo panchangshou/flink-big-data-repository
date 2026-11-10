@@ -11,6 +11,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>realtime-dwd-base-log</module>
+        <module>realtime-dwd-trade-cart-add</module>
     </modules>
     <dependencies>
         <dependency>
