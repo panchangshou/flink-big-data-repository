@@ -13,6 +13,7 @@
         <module>realtime-dwd-base-log</module>
         <module>realtime-dwd-trade-cart-add</module>
         <module>realtime-dwd-trade-order-detail</module>
+        <module>realtime-dwd-trade-order-cancel-detail</module>
     </modules>
     <dependencies>
         <dependency>
