@@ -14,6 +14,7 @@
         <module>realtime-dwd-trade-cart-add</module>
         <module>realtime-dwd-trade-order-detail</module>
         <module>realtime-dwd-trade-order-cancel-detail</module>
+        <module>realtime-dwd-trade-order-pay-suc-detail</module>
     </modules>
     <dependencies>
         <dependency>
